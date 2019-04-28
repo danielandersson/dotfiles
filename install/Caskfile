@@ -1,0 +1,80 @@
+# Taps
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions" # For java8
+
+# Browser
+cask "firefox"
+
+# General
+cask "balenaetcher"
+cask "caffeine"
+cask "the-unarchiver"
+cask "tunnelblick"
+
+# Security
+cask "gpg-suite"
+
+# MenuBar
+cask "bitbar"
+cask "vanilla"
+
+# IDE
+cask "sublime-text"
+cask "visual-studio-code"
+
+# Apps
+cask "numi"
+cask "slack"
+cask "sourcetree"
+cask "spotify"
+# cask "skype" # Not needed
+
+# Java
+cask "java"
+# cask "java8"
+cask "jetbrains-toolbox"
+
+# Dev Tools
+cask "dash2"
+cask "docker"
+cask "minikube"
+cask "charles"
+cask "hex-fiend"
+cask "google-cloud-sdk"
+cask "postman"
+cask "wireshark-chmodbpf"
+
+# Unity
+cask "unity-hub"
+
+# Database
+cask "robo-3t"
+cask "tableplus"
+
+# File Transfer
+cask "cyberduck"
+cask "forklift"
+cask "transmit"
+
+# CSharp
+cask "dotnet-sdk"
+
+# Design
+cask "zeplin"
+
+# Fonts
+cask "font-roboto"
+cask "font-fira-code"
+cask "font-source-code-pro"
+cask "font-source-sans-pro"
+cask "font-source-serif-pro"
+cask "font-hack"
+
+
+# Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "quicklook-csv"
+cask "qlstephen"

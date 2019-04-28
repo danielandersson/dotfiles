@@ -1,0 +1,45 @@
+# Taps
+# tap "danielandersson/accedo"
+# tap "danielandersson/formulas"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# General
+brew 'coreutils' # Those that come with macOS are outdated
+brew "fasd"
+brew "diff-so-fancy"
+brew "dockutil" # CLI to manage the macOS Dock
+brew "git-flow"
+brew "jq"
+brew "mackup" # Backup settings
+#brew "mas" # Mac App Store  CLI. Do not have any App Store apps
+
+# Dev Tools
+brew "awscli"
+brew "amazon-ecs-cli"
+brew "terraform"
+
+# Android
+brew "apktool"
+
+# Go
+brew "go"
+
+# Rust
+brew "rust"
+
+# Java
+# brew "gradle" TODO: Fix, required java
+
+# K8s
+brew "kubernetes-cli"
+brew "kubernetes-helm"
+brew "kops"
+
+# Services
+brew "mongodb@3.6", restart_service: true
+brew "rabbitmq", restart_service: true
+brew "redis", restart_service: true
+
+# brew "danielandersson/accedo/kingpin", args: ["HEAD"] # TODO: SSH checkout
