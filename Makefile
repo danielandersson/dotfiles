@@ -8,7 +8,8 @@ export STOW_DIR := $(DOTFILES_DIR)
 
 all: sudo core packages link
 
-core: brew bash git
+# core: brew bash git
+core: brew zsh git
 
 stow: brew
 	brew install stow
@@ -37,6 +38,11 @@ bash: BASH=/usr/local/bin/bash
 bash: SHELLS=/private/etc/shells
 bash: brew
 	if ! grep -q $(BASH) $(SHELLS); then brew install bash bash-completion@2 pcre && sudo append $(BASH) $(SHELLS) && chsh -s $(BASH); fi
+
+zsh: ZSH=/usr/local/bin/zsh
+zsh: SHELLS=/private/etc/shells
+zsh: brew
+	if ! grep -q $(ZSH) $(SHELLS); then brew install zsh zsh-completions pcre && sudo append $(ZSH) $(SHELLS) && chsh -s $(ZSH); fi
 
 git: brew
 	brew install git git-extras
