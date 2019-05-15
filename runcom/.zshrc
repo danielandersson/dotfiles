@@ -1,14 +1,21 @@
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
+export DEFAULT_USER="daniel"
+
+#export LC_ALL="en_SE.UTF-8"
+#export LANG="en_SE"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
+#DISABLE_AUTO_TITLE="true"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="taybalt-custom"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,20 +63,3 @@ ZSH_CUSTOM=$DOTFILES/zsh
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"

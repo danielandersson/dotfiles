@@ -7,6 +7,7 @@ tap "homebrew/services"
 
 # General
 brew 'coreutils' # Those that come with macOS are outdated
+brew "htop"
 brew "fasd"
 brew "diff-so-fancy"
 brew "dockutil" # CLI to manage the macOS Dock
@@ -36,6 +37,7 @@ brew "rust"
 brew "kubernetes-cli"
 brew "kubernetes-helm"
 brew "kops"
+brew "skaffold"
 
 # Services
 brew "mongodb@3.6", restart_service: true

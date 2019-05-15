@@ -18,7 +18,7 @@ sudo:
 	sudo -v
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-packages: brew-packages cask-apps
+packages: brew-packages cask-apps vscode-ext
 
 link: stow
 	for FILE in $$(\ls -A runcom); do if [ -f $(HOME)/$$FILE -a ! -h $(HOME)/$$FILE ]; then mv -v $(HOME)/$$FILE{,.bak}; fi; done
@@ -52,6 +52,8 @@ brew-packages: brew
 
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile
+
+vscode-ext: cask-apps
 	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
 
 test:

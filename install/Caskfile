@@ -66,12 +66,15 @@ cask "zeplin"
 
 # Fonts
 cask "font-roboto"
-cask "font-fira-code"
 cask "font-source-code-pro"
 cask "font-source-sans-pro"
 cask "font-source-serif-pro"
-cask "font-hack"
 
+cask "font-hack-nerd-font"
+cask "font-firacode-nerd-font"
+
+cask "font-source-code-pro-for-powerline"
+cask "font-menlo-for-powerline"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"

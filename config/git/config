@@ -6,7 +6,7 @@
 	user = danielandersson
 
 [core]
-	excludesfile = ~/.config/git/ignore
+	excludesfile = /Users/daniel/.config/git/ignore
 	#editor = nano
   #editor = sublime -n -w
   editor = code --wait
@@ -95,3 +95,9 @@
     line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
     compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
     detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
