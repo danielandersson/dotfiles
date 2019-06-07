@@ -63,6 +63,7 @@ cask "dotnet-sdk"
 
 # Design
 cask "zeplin"
+cask "omnigraffle"
 
 # Fonts
 cask "font-roboto"

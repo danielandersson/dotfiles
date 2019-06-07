@@ -38,6 +38,7 @@ brew "kubernetes-cli"
 brew "kubernetes-helm"
 brew "kops"
 brew "skaffold"
+brew "docker-machine-driver-hyperkit"
 
 # Services
 brew "mongodb@3.6", restart_service: true
