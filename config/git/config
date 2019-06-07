@@ -95,6 +95,10 @@
     line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
     compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
     detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
