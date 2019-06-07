@@ -1,7 +1,25 @@
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=100000
+
+setopt extendedglob nomatch notify
+setopt appendhistory      #Append history to the history file (no overwriting)
+setopt share_history       #Share history across terminals
+setopt incappendhistory   #Immediately append to the history file, not just when a term is killed
+unsetopt autocd beep
+
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
 export DEFAULT_USER="daniel"
+export GOPATH=$HOME/go
+
+
+autoload -Uz compinit
+compinit
+
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
 
 #export LC_ALL="en_SE.UTF-8"
 #export LANG="en_SE"
